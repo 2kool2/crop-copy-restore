@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=en-GB>
+<head>
+  <meta charset=UTF-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Responsively crop copy, restore onclick</title>
+  <meta name=apple-mobile-web-app-capable content=yes>
+  <link rel=stylesheet href="css/styles.css">
+</head>
+<body>
+
+  <h1>Responsively crop copy, restore onclick</h1>
+  <p>Responsively crop content copy down to a user-defined number of lines.<br>Click to restore content via a typed animation.</p>
+  <p>Vanilla JavaScript running at 60fps.<br>I believe WCAG 2 accessible but unconfirmed.<br>1K approx minified &amp; gzipped.</p>
+
+  <div class=txt data-cropCopyRestore>My wife Maria, loves hot spicy food. I found this out on our first date. She said “I really fancy a curry”. Well, I was keen to impress so I said, “great, that’s my favourite too ”But it isn’t, never has been. We’ve been married 15 years and I still haven’t
+    let on. Don’t know why. But whenever I cook her favourite chicken gujarati extra spicy, with green beans and fresh ginger, I do what any self-respecting chef would do. I cheat. I put a king size spoonful of natural yoghurt in mine. And I keep schtum.</div>
+
+  <div class=txt data-cropCopyRestore=3>Sometimes, it's the undemandingly easy, everyday, recipes that deliver the most joy. For 'Iain' and his dad, from our Food Love Story, it's croque monsieur – they first had it on a joint trip to France, and since then it's become their favourite weekend
+    lunch. Iain's made a few changes to it along the way (bonjour, wafer thin roast turkey) – but for him and his dad, it's most definitely 'proper'.</div>
+
+  <div class=txt data-cropCopyRestore=2>Any parent will probably be able to relate to 'Sunita' in our Food Love Story. Kids can be champion fussy eaters, especially when it comes to vegetables. Here's a genius solution – meatballs packed with under-the-radar veg. Sunita's kids love them, and are none the wiser.</div>
+
+  <h2>To do</h2>
+  <ul>
+    <li>Add opened / closed icon.</li>
+  </ul>
+
+  <h2>Status</h2>
+  <p>In cross-browser testing. Accessibility testing to follow.</p>
+
+  <p><strong>CodePen demo: <a href="http://codepen.io/2kool2/pen/dNPqKj?editors=1000">Responsively crop copy, restore onclick</a></strong></p>
+  <p>GitHub repo: <a href="">crop-copy-restore</a></p>
+  <p>Mike Foskett @ <a href="https://websemantics.uk/">webSemantics</a></p>
+
+  <script src="js/cropCopyRestore.1.0.js"></script>
+
+</body>
+</html>

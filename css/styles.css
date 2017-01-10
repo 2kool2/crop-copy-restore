@@ -1,0 +1,32 @@
+/* Generic styles */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #3a3a3a;
+}
+h1, h2 {font-weight: 100}
+a,
+a:visited {color: #fff}
+.txt {
+  margin: 2rem;
+  padding: 1.75rem 2rem;
+  background-color: #000;
+  transition: all .3s ease-out;
+}
+
+/* Required styles, amend to suit project */
+
+[data-cropCopyRestore][role="button"]:focus {
+  outline: 0 dotted #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .5);
+}
+[data-cropCopyRestore][role="button"]:hover {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .5);
+  cursor: pointer;
+}
+.-clone {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
