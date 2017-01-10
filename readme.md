@@ -33,6 +33,7 @@ Add data attributes to the content block(s):
 <div class=txt data-cropCopyRestore=3>Content copy to trim&hellip;</div>
 ```
 
+<br>
 Required CSS:
 
 ``` css
@@ -50,28 +51,13 @@ Required CSS:
   z-index: -1;
 }
 ```
-
-#To do
-
-Add an SVG definition for the open / close icons:
-
-```html
-<svg style="display:none">
-  <defs>
-    <symbol viewBox="0 0 34 34" id="icon-plus">
-      <path d="M25 17.2l-14 7v-14l14 7z"></path>
-    </symbol>
-    <symbol viewBox="0 0 34 34" id="icon-minus">
-      <path d="M20 11h2v12h-2V11zm-8 0h2v12h-2V11z"></path>
-    </symbol>
-  </defs>
-</svg>
 ```
 
 <br>
-##Browser support
+##Status
 
-In cross-browser testing. Accessibility testing to follow.
+Considered too jarring visually.
+Project to be redeveloped with smooth text expansion.
 
 
 <hr>
