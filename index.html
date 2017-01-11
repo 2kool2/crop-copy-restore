@@ -11,26 +11,77 @@
 <body>
 
   <h1>Responsively crop copy, restore onclick</h1>
+
   <p>Responsively crop content copy down to a user-defined number of lines.<br>Click to restore content via a typed animation.</p>
   <p>Vanilla JavaScript running at 60fps.<br>I believe WCAG 2 accessible but unconfirmed.<br>1K approx minified &amp; gzipped.</p>
+
+  <h2>Examples</h2>
+
+  <h3>Single line crop</h3>
 
   <div class=txt data-cropCopyRestore>My wife Maria, loves hot spicy food. I found this out on our first date. She said “I really fancy a curry”. Well, I was keen to impress so I said, “great, that’s my favourite too ”But it isn’t, never has been. We’ve been married 15 years and I still haven’t
     let on. Don’t know why. But whenever I cook her favourite chicken gujarati extra spicy, with green beans and fresh ginger, I do what any self-respecting chef would do. I cheat. I put a king size spoonful of natural yoghurt in mine. And I keep schtum.</div>
 
+
+  <h3>Three lines</h3>
+
   <div class=txt data-cropCopyRestore=3>Sometimes, it's the undemandingly easy, everyday, recipes that deliver the most joy. For 'Iain' and his dad, from our Food Love Story, it's croque monsieur – they first had it on a joint trip to France, and since then it's become their favourite weekend
     lunch. Iain's made a few changes to it along the way (bonjour, wafer thin roast turkey) – but for him and his dad, it's most definitely 'proper'.</div>
 
+
+  <h3>Two lines</h3>
+
   <div class=txt data-cropCopyRestore=2>Any parent will probably be able to relate to 'Sunita' in our Food Love Story. Kids can be champion fussy eaters, especially when it comes to vegetables. Here's a genius solution – meatballs packed with under-the-radar veg. Sunita's kids love them, and are none the wiser.</div>
 
-  <h2>To do</h2>
-  <ul>
-    <li>Add opened / closed icon.</li>
-  </ul>
+
+  <h2>Basic usage</h2>
+
+  <p>Include a link to the script:</p>
+
+  <figure>
+    <figcaption>Language HTML</figcaption>
+    <pre><code>
+&lt;script src="js/cropCopyRestore.1.0.min.js">&lt;/script>
+    </code></pre>
+  </figure>
+
+  <p>Add data attributes to the content block(s):</p>
+
+  <figure>
+    <figcaption class=visually-hidden>Language HTML</figcaption>
+    <pre><code class=language-html>
+&lt;div class=txt data-cropCopyRestore=3>Content copy to trim&hellip;>&lt;/div>
+    </code></pre>
+  </figure>
+
+  <p>Data attribute value equals number of lines to display.</p>
+
+
+  <h2>Required CSS:</h2>
+
+  <figure>
+    <figcaption>Language CSS</figcaption>
+    <pre><code>
+[data-cropCopyRestore][role="button"]:focus {
+  outline: 0 dotted #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .5);
+}
+[data-cropCopyRestore][role="button"]:hover {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .5);
+  cursor: pointer;
+}
+.-clone {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+    </code></pre>
+  </figure>
 
   <h2>Status</h2>
   <p>Considered too jarring visually.<br>Project to be redeveloped with smooth text expansion.</p>
 
-  <p><strong>CodePen demo: <a href="http://codepen.io/2kool2/pen/dNPqKj?editors=1000">Responsively crop copy, restore onclick</a></strong></p>
+  <p>CodePen demo: <a href="http://codepen.io/2kool2/pen/dNPqKj?editors=1000">Responsively crop copy, restore onclick</a></p>
   <p>GitHub repo: <a href="https://github.com/2kool2/crop-copy-restore">crop-copy-restore</a></p>
   <p>Mike Foskett @ <a href="https://websemantics.uk/">webSemantics</a></p>
 

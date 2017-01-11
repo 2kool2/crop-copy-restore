@@ -5,11 +5,16 @@ body {
   color: #fff;
   background-color: #3a3a3a;
 }
-h1, h2 {font-weight: 100}
+h1, h2, h3 {font-weight: 100}
+h2, h3 {margin-top: 2rem; margin-bottom: 1rem}
+figure {margin: 1rem 2rem;}
+figcaption {display:none}
+pre {margin: 0}
 a,
 a:visited {color: #fff}
 .txt {
-  margin: 2rem;
+  max-width: 38rem;
+  margin: 0 2rem;
   padding: 1.75rem 2rem;
   background-color: #000;
   transition: all .3s ease-out;

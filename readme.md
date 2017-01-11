@@ -33,6 +33,9 @@ Add data attributes to the content block(s):
 <div class=txt data-cropCopyRestore=3>Content copy to trim&hellip;</div>
 ```
 
+Data attribute value equals number of lines to display.
+
+
 <br>
 Required CSS:
 
