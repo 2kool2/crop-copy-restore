@@ -29,9 +29,8 @@ Add data attributes to the content block(s):
 
 Attribute value equals the number of lines to display.
 
-
 <br>
-Required CSS:
+##Required CSS:
 
 ``` css
 [data-cropCopyRestore][role="button"]:focus {
