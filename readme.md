@@ -21,7 +21,7 @@ Include a link to the script:
 <script src="js/cropCopyRestore.1.0.min.js"></script>
 ```
 
-Add data attributes to the content block(s):
+Add data attribute to the content block(s):
 
 ```html
 <div class=txt data-cropCopyRestore=3>Content copy to trim&hellip;</div>
