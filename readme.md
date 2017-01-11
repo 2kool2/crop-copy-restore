@@ -13,12 +13,6 @@ Super small script: 1K approx minified &amp; gzipped.
 
 
 <br>
-##How it works
-
-TBC.
-
-
-<br>
 ##Basic usage
 
 Include a link to the script:
