@@ -1,4 +1,4 @@
-#Responsively crop copy, restore onclick
+<h1>Responsively crop copy, restore onclick</h1>
 
 
 Responsively crop content copy down to a user-defined number of lines.
@@ -13,7 +13,7 @@ Super small script: 1K approx minified &amp; gzipped.
 
 
 <br>
-##Basic usage
+<h2>Basic usage</h2>
 
 Include a link to the script:
 
@@ -30,7 +30,7 @@ Add data attribute to the content block(s):
 Attribute value equals the number of lines to display.
 
 <br>
-##Required CSS:
+<h2>Required CSS:</h2>
 
 ``` css
 [data-cropCopyRestore][role="button"]:focus {
@@ -49,7 +49,7 @@ Attribute value equals the number of lines to display.
 ```
 
 <br>
-##Status
+<h2>Status</h2>
 
 Considered too jarring visually.
 Project to be redeveloped with smooth text expansion.
